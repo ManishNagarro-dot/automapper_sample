@@ -28,6 +28,7 @@ namespace automapper_sample
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             // add postgres sql string here
+            // classes to our directory
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
