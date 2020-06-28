@@ -29,7 +29,7 @@ namespace automapper_sample
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             // add postgres sql string here
             // classes to our directory
-            // add postgres sql string here||--
+            // add postgres sql string here||ggjhgjhg
             //-----
 
 
