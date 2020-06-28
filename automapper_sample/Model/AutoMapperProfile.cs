@@ -14,6 +14,7 @@ namespace automapper_sample.Model
 
             CreateMap<Address, AddressDTO>();
 
+
         }
     }
 }
