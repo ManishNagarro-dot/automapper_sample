@@ -31,6 +31,8 @@ namespace automapper_sample
             // classes to our directory
             // add postgres sql string here||ggjhgjhg
             //-----
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
