@@ -12,8 +12,8 @@ namespace automapper_sample.Model
         public int Age { get; set; }
 
         [JsonProperty("City")]
-        public string CurrentCity { get; set; }
-        public AddressDTO Address { get; set; }
+        public string City { get; set; }
+        public Address Address { get; set; }
 
     }
 }
