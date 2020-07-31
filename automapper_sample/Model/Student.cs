@@ -20,6 +20,6 @@ namespace automapper_sample.Model
         [Column("StudentCity")]
         public string City { get; set; }
         public Address Address { get; set; }
-
+        //fsdfsdfsd
     }
 }
