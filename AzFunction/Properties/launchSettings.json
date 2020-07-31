@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AzFunction": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "MyWebApiConection": "User ID =postgres;Password=manish@b2;Server=localhost;Port=5432;Database=testDb;Integrated Security=true;Pooling=true;"
+      }
+    }
+  }
+}

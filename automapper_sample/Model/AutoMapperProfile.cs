@@ -9,8 +9,8 @@ namespace automapper_sample.Model
     {
         public AutoMapperProfile()
         {
-            CreateMap<Student,StudentDTO>()
-                .ForMember(dest=>dest.CurrentCity,opt=>opt.MapFrom(src=>src.City));
+            CreateMap<Student, StudentDTO>();
+                //.ForMember(dest=>dest.CurrentCity,opt=>opt.MapFrom(src=>src.City));
 
             CreateMap<Address, AddressDTO>();
 

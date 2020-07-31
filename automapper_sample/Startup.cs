@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using automapper_sample.Model;
+using automapper_sample.Services.Students;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,12 +29,10 @@ namespace automapper_sample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            // add postgres sql string here
-            // classes to our directory
-            // add postgres sql string here||ggjhgjhg
-            //-----
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddEntityFrameworkNpgsql().AddDbContext<MasterDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
+            services.AddScoped<IStudentService, StudentService>();
 
         }
 
